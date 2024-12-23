@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            color: brown;
+        }
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="formulario.php" method="get">
+        <p>
+            <label for="Nombre">Nombre y apellidos:</label>
+            <input type="text" name="Nnmbre" id="Nombre" maxlength="50">
+        </p>
+        <p>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" name="Contraseña" id="Contraseña" maxlength="8">
+        </p>
+        <p>
+            <label for="Usuario">Usuario: </label>
+            <input type="text" name="Usuario" id="Usuario" disabled placeholder="anonimo" >
+        </p>
+        <p>
+        <label for="Nivel">Nivel</label>
+            <p>
+                <input type="radio" name="tipo" value="S" >
+                <label for="Profesional">Profesional</label>
+            </p>
+            <p>
+                <input type="radio" name="tipo" value="A" checked>
+                <label for="Avanzado">Avanzado</label>
+            </p>
+            <p>
+                <input type="radio" name="tipo" value="J">
+                <label for="Principiante">Principiante</label>
+            </p>    
+        </p>
+        <p>
+            <label for="Nacionalidad">Nacionalidad:
+                <select name="nacionalidad">
+                    <option value="esp" selected>España</option>
+                    <option value="Ale">Alemania</option>
+                    <option value="Fra">Francia</option>
+                    <option value="Ita">Italia</option>
+                </select>
+            </label>
+        </p>
+            <label for="comentarios">Descripción: <textarea name="comentarios" id=""></textarea></label>
+        <p>
+            <label for=""><input type="checkbox" checked>Deseo recibir información sobre novedades y ofertas</label>
+        </p>
+        <p>
+            <label for=""><input type="checkbox">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </p>
+        <p>
+            <label for="">Adjuntar foto <input type="file"></label>
+        </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+    </form>
+</body>
+</html>
